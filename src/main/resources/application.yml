@@ -1,0 +1,21 @@
+server:
+  port: 8090
+  servlet:
+      context-path: /cadastro
+
+spring:
+  application:
+    name: Cadastro
+  datasource:
+    username: postgres
+    password: 123456
+    url: jdbc:postgresql://localhost:5429/cadastro
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
